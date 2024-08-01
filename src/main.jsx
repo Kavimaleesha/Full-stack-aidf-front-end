@@ -4,7 +4,6 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 import HomePage from "./pages/home/home.page.jsx";
 import JobPage from "./pages/job/job.page";
-
 import RootLayout from "./layouts/root.layout";
 import SignInPage from "./pages/sign-in.page";
 import SignUpPage from "./pages/sign-up.page";

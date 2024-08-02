@@ -2,7 +2,7 @@
 export const getJobApllicationsForJob = async (id) => {
   const token = await window.Clerk.session.getToken();
 
-  const res = await fetch(`http://full-stack-aidf-back-end-production.up.railway.app/jobApplications?jobId=${id}`, {
+  const res = await fetch(`https://full-stack-aidf-back-end-production.up.railway.app/jobApplications?jobId=${id}`, {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token}`,
@@ -15,7 +15,7 @@ export const getJobApllicationsForJob = async (id) => {
 export const getJobApplicationById = async (id) => {
   const token = await window.Clerk.session.getToken();
 
-  const res = await fetch(`http://full-stack-aidf-back-end-production.up.railway.app/jobApplications/${id}`, {
+  const res = await fetch(`https://full-stack-aidf-back-end-production.up.railway.app/jobApplications/${id}`, {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token}`,
@@ -33,7 +33,7 @@ export const createJobApplication = async ({
 }) => {
   const token = await window.Clerk.session.getToken();
 
-  await fetch("http://full-stack-aidf-back-end-production.up.railway.app/jobApplications", {
+  await fetch("https://full-stack-aidf-back-end-production.up.railway.app/jobApplications", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -20,6 +20,7 @@ export const getJobById = async (id) => {
   });
 
   const data = await res.json();
+  console.log(data);
   return data;
 };
 

@@ -111,7 +111,7 @@ function JobPage() {
 
         <div>
           <div className="flex flex-col gap-y-4">
-            <Label>Hello</Label>
+            <Label>{job?.questions[0]}</Label>
             <Textarea
               required
               value={formData.a1}

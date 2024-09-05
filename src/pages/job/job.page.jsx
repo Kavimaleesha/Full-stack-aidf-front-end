@@ -7,6 +7,8 @@ import { useUser } from "@clerk/clerk-react";
 import { Briefcase, MapPin } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Navigate, useParams } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const getJob = async (id) => {
   const token = await window.Clerk.session.getToken();
